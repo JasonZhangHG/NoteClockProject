@@ -50,36 +50,11 @@
         android:textColor="#0000ff"
         android:textSize="@dimen/sp_18" />
     
-    <!-- 底部按钮 -->
-    <RelativeLayout
-        android:id="@+id/relativeLayout1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/relativeLayout2"
-        android:layout_centerHorizontal="true">
-        <!-- 保存按钮 -->
-        <Button
-            android:id="@+id/button_add_save"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="clickView"
-            android:text="保  存" />
-        <!-- 取消按钮 -->
-        <Button
-            android:id="@+id/button_add_cacel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/button_add_save"
-            android:onClick="clickView"
-            android:text="取  消" />
-    
-    </RelativeLayout>
-    
     <RelativeLayout
         android:id="@+id/relativeLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/relativeLayout1"
         android:layout_centerHorizontal="true">
         
         <TextView
@@ -113,6 +88,41 @@
             android:onClick="clickView"
             android:padding="@dimen/dp5"
             android:text="非常重要" />
+    
+    </RelativeLayout>
+    
+    <!-- 底部按钮 -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp">
+        
+        <Button
+            android:id="@+id/button_add_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickView"
+            android:text="提醒时间" />
+        
+        <!-- 保存按钮 -->
+        <Button
+            android:id="@+id/button_add_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/button_add_clock"
+            android:onClick="clickView"
+            android:text="保  存" />
+        <!-- 取消按钮 -->
+        <Button
+            android:id="@+id/button_add_cacel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/button_add_save"
+            android:onClick="clickView"
+            android:text="取  消" />
     
     </RelativeLayout>
 

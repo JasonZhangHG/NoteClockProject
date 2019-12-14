@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_log_out_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black50"
+    android:gravity="center"
+    android:paddingStart="@dimen/common_dialog_body_padding_left"
+    android:paddingLeft="@dimen/common_dialog_body_padding_left"
+    android:paddingEnd="@dimen/common_dialog_body_padding_right"
+    android:paddingRight="@dimen/common_dialog_body_padding_right"
+    tools:ignore="MissingPrefix">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+        
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextStyleRobotoMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginRight="24dp"
+            android:text="标题"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/tv_subscribe"
+            style="@style/TextStyleRobotoMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginRight="24dp"
+            android:text="描述"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/tv_grade"
+            style="@style/TextStyleRobotoMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginRight="24dp"
+            android:text="等级"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/tv_yes"
+            style="@style/TextStyleRobotoMedium"
+            android:layout_width="64dp"
+            android:layout_height="36dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="@string/sign_out_check_pop_btn_1"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    
+    </LinearLayout>
+
+</RelativeLayout>

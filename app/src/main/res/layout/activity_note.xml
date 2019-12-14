@@ -12,7 +12,7 @@
         android:layout_height="56dp"
         android:background="#8DEEEE"
         android:gravity="center"
-        android:text="记事本"
+        android:text="@string/app_name"
         android:textColor="#fff"
         android:textSize="20sp" />
     
@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/login_btn_register_false"
-            android:text="点击添加日记"
+            android:text="添加提醒"
             android:textColor="#ffff00" />
     
     </RelativeLayout>
@@ -41,7 +41,8 @@
         android:background="@drawable/shape_white_7dp"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
         
         <ImageView
             android:layout_width="@dimen/dp11"

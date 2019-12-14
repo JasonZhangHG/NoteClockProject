@@ -57,6 +57,7 @@ public class MyKindAdapter extends BaseAdapter {
         myViewHolder.tvItemTime.setText("记录时间:" + CreatedTime1);
         myViewHolder.tvItemCount.setText("标题：" + noteBean.getTitle());
         myViewHolder.tvItemSign.setText("内容：" + noteBean.getValue());
+        myViewHolder.tvRemindTime.setText("提醒时间：" + noteBean.getShowClockTime());
         switch (noteBean.getGrade()) {
             case 1:
                 myViewHolder.tvItemGrade.setText("等级:一般");
@@ -84,6 +85,8 @@ public class MyKindAdapter extends BaseAdapter {
         TextView tvItemSign;
         @BindView(R.id.tvGrade)
         TextView tvItemGrade;
+        @BindView(R.id.tvItemRemindTime)
+        TextView tvRemindTime;
 
         MyVidewHolder(View view) {
             ButterKnife.bind(this, view);

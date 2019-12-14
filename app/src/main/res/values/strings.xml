@@ -4,5 +4,6 @@
     <string name="sign_out_check_pop_title">确定要退出吗?</string>
     <string name="sign_out_check_pop_btn_1">确定</string>
     <string name="btn_cancel">取消</string>
+    <string name="play_fail">播放失败</string>
 
 </resources>

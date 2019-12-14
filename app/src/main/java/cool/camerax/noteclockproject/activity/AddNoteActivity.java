@@ -1,17 +1,26 @@
 package cool.camerax.noteclockproject.activity;
 
+import android.app.Activity;
+import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.TimePicker;
+
+import com.blankj.utilcode.util.LogUtils;
 
 import org.greenrobot.eventbus.EventBus;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -20,6 +29,7 @@ import cool.camerax.noteclockproject.base.BaseActivity;
 import cool.camerax.noteclockproject.bean.DataSaveEvent;
 import cool.camerax.noteclockproject.bean.NoteBean;
 import cool.camerax.noteclockproject.utils.DBNoteUtils;
+import cool.camerax.noteclockproject.utils.TimeUtils;
 import cool.camerax.noteclockproject.utils.ToastHelper;
 import cool.camerax.noteclockproject.view.NoteEditText;
 
@@ -37,6 +47,8 @@ public class AddNoteActivity extends BaseActivity {
     Button buttonAddSave;
     @BindView(R.id.button_add_cacel)
     Button buttonAddCacel;
+    @BindView(R.id.button_add_clock)
+    Button mAddClockView;
     @BindView(R.id.relativeLayout1)
     RelativeLayout relativeLayout1;
 
@@ -52,6 +64,9 @@ public class AddNoteActivity extends BaseActivity {
     private TextView editText_add_time;
     private NoteEditText noteEditText_add_content;
     private int mSelectGradle = -1;
+    private long mClockTime = -1;
+    private String mShowClockTime;
+    private Calendar calendar = Calendar.getInstance(Locale.CHINA);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,6 +126,9 @@ public class AddNoteActivity extends BaseActivity {
                     mSelectGradle = 3;
                 }
                 break;
+            case R.id.button_add_clock:
+                showDatePickerDialog(AddNoteActivity.this, 3, calendar);
+                break;
             default:
                 break;
         }
@@ -126,12 +144,16 @@ public class AddNoteActivity extends BaseActivity {
             ToastHelper.showShortMessage("名称和内容都不能为空");
         } else if (mSelectGradle < 0) {
             ToastHelper.showShortMessage("请选择等级后再保存");
+        } else if (mClockTime < 0 || TextUtils.isEmpty(mShowClockTime)) {
+            ToastHelper.showShortMessage("请选择提醒时间");
         } else {
             NoteBean diaryBean = new NoteBean();
             diaryBean.setTitle(title);
             diaryBean.setValue(content);
             diaryBean.setCreatTimeAsId(System.currentTimeMillis());
             diaryBean.setGrade(mSelectGradle);
+            diaryBean.setClockTime(mClockTime);
+            diaryBean.setShowClockTime(mShowClockTime);
             DBNoteUtils.getInstance().insertOneData(diaryBean);
             ToastHelper.showShortMessage("添加成功");
             EventBus.getDefault().post(new DataSaveEvent());
@@ -145,5 +167,58 @@ public class AddNoteActivity extends BaseActivity {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String time = sdf.format(d);
         return time;
+    }
+
+    public void showDatePickerDialog(Activity activity, int themeResId, final Calendar calendar) {
+        // 直接创建一个DatePickerDialog对话框实例，并将它显示出来
+        new DatePickerDialog(activity, themeResId, new DatePickerDialog.OnDateSetListener() {
+            // 绑定监听器(How the parent is notified that the date is set.)
+            @Override
+            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                showTimePickerDialog(AddNoteActivity.this, 3, calendar, year, monthOfYear + 1, dayOfMonth);
+            }
+        }
+                // 设置初始日期
+                , calendar.get(Calendar.YEAR)
+                , calendar.get(Calendar.MONTH)
+                , calendar.get(Calendar.DAY_OF_MONTH)).show();
+    }
+
+    public void showTimePickerDialog(Activity activity, int themeResId, Calendar calendar, final int Year, final int Month, final int Day) {
+        // Calendar c = Calendar.getInstance();
+        // 创建一个TimePickerDialog实例，并把它显示出来
+        // 解释一哈，Activity是context的子类
+        new TimePickerDialog(activity, themeResId,
+                // 绑定监听器
+                new TimePickerDialog.OnTimeSetListener() {
+                    @Override
+                    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+
+                        String mMonth = "" + Month;
+                        String mDay = "" + Day;
+                        String mMinute = String.valueOf(minute);
+                        String mhourOfDay = String.valueOf(hourOfDay);
+                        if (Month / 10 == 0) {
+                            mMonth = "0" + Month;
+                        }
+                        if (Day / 10 == 0) {
+                            mDay = "0" + Day;
+                        }
+                        if (minute / 10 == 0) {
+                            mMinute = "0" + minute;
+                        }
+                        if (hourOfDay / 12 == 0) {
+                            mhourOfDay = "0" + hourOfDay;
+                        }
+                        mShowClockTime = Year + "-" + mMonth + "-" + mDay + " " + mhourOfDay + ":" + mMinute + ":00";
+                        mClockTime = TimeUtils.dateToStamp(mShowClockTime);
+                        LogUtils.d(" AddNoteActivity  selectTime : " + mShowClockTime + "  mClockTime : " + mClockTime);
+                    }
+                }
+                // 设置初始时间
+                , calendar.get(Calendar.HOUR_OF_DAY)
+                , calendar.get(Calendar.MINUTE)
+                // true表示采用24小时制
+                , true).show();
     }
 }
