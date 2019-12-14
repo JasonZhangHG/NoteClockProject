@@ -46,6 +46,63 @@
         android:scrollbars="vertical"
         android:textColor="#0000ff"
         tools:ignore="UnknownId" />
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlNotXiangQingActivity"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical">
+        
+        <TextView
+            android:id="@+id/button_small_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/select_garde"
+            android:onClick="clickView"
+            android:padding="@dimen/dp5"
+            android:text="一般重要"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/button_middle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@+id/button_small_text"
+            android:background="@drawable/select_garde"
+            android:onClick="clickView"
+            android:padding="@dimen/dp5"
+            android:text="中级重要" />
+        
+        <TextView
+            android:id="@+id/button_big_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@+id/button_middle_text"
+            android:background="@drawable/select_garde"
+            android:onClick="clickView"
+            android:padding="@dimen/dp5"
+            android:text="非常重要" />
+        
+        <Button
+            android:id="@+id/button_add_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@+id/button_big_text"
+            android:onClick="clickView"
+            android:text="提醒时间" />
+    
+    </RelativeLayout>
+    
+    
     <!-- 底部按钮 -->
     <RelativeLayout
         android:id="@+id/rlNotXiangQingActivity"
