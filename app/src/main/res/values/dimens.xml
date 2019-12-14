@@ -1,0 +1,675 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="dp1">1dp</dimen>
+    <dimen name="dp4">4dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="dp6">6dp</dimen>
+    <dimen name="dp7">7dp</dimen>
+    <dimen name="dp8">8dp</dimen>
+    <dimen name="dp9">9dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp11">11dp</dimen>
+    <dimen name="dp12">12dp</dimen>
+    <dimen name="dp13">13dp</dimen>
+    <dimen name="dp16">16dp</dimen>
+
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="chat_msg_send_padding_left">12dp</dimen>
+    <dimen name="chat_msg_send_padding_right">12dp</dimen>
+    <dimen name="chat_msg_send_time_margin_bottom">12dp</dimen>
+    <dimen name="chat_msg_send_time_margin_top">8dp</dimen>
+    <dimen name="chat_msg_receive_avatar_size">42dp</dimen>
+    <dimen name="chat_msg_receive_text_margin_left">6dp</dimen>
+    <dimen name="chat_msg_receive_text_padding_right">12dp</dimen>
+    <dimen name="chat_msg_receive_text_padding_left">17dp</dimen>
+    <dimen name="chat_msg_receive_text_padding_verical">10dp</dimen>
+    <dimen name="chat_msg_accept_friend_margin_vertical">4dp</dimen>
+    <dimen name="chat_msg_update_icon_background_length">32dp</dimen>
+    <dimen name="chat_msg_item_margin_horizon">14dp</dimen>
+    <dimen name="x_normal_font">16sp</dimen>
+    <dimen name="small_font">11sp</dimen>
+
+    <!--Baseline-->
+    <dimen name="xxx_tiny_font">10sp</dimen>
+    <dimen name="x_small_font">12sp</dimen>
+    <dimen name="xx_small_font">13sp</dimen>
+    <dimen name="xxx_small_font">14sp</dimen>
+    <dimen name="normal_font">15sp</dimen>
+    <dimen name="xx_normal_font">17sp</dimen>
+    <dimen name="xxx_normal_font">18sp</dimen>
+    <dimen name="large_font">19sp</dimen>
+    <dimen name="x_large_font">20sp</dimen>
+    <dimen name="xx_large_font">21sp</dimen>
+    <dimen name="xxx_large_font">22sp</dimen>
+
+    <!--Common-->
+    <dimen name="common_single_line_height">1dp</dimen>
+    <dimen name="common_single_line_width">1dp</dimen>
+    <dimen name="common_navigation_bar_height">55dp</dimen>
+    <dimen name="common_rectange_corner_radius">14dp</dimen>
+    <dimen name="common_type_message_height">50dp</dimen>
+    <dimen name="common_type_message_padding_left">14dp</dimen>
+    <dimen name="common_type_message_padding_right">14dp</dimen>
+    <dimen name="common_dialog_title_icon_padding_left">28dp</dimen>
+    <dimen name="common_dialog_title_icon_padding_right">28dp</dimen>
+    <dimen name="common_dialog_title_icon_padding_top">17dp</dimen>
+    <dimen name="common_dialog_title_icon_padding_bottom">20dp</dimen>
+    <dimen name="common_dialog_message_container_margin_top">35dp</dimen>
+    <dimen name="common_dialog_message_padding_top">35dp</dimen>
+    <dimen name="common_dialog_message_padding_bottom">22dp</dimen>
+    <dimen name="common_dialog_message_padding_left">18dp</dimen>
+    <dimen name="common_dialog_message_padding_right">18dp</dimen>
+    <dimen name="common_dialog_body_padding_left">46dp</dimen>
+    <dimen name="common_dialog_body_padding_right">46dp</dimen>
+    <dimen name="common_dialog_confirm_button_padding_top">12dp</dimen>
+    <dimen name="common_dialog_confirm_button_padding_bottom">12dp</dimen>
+    <dimen name="common_dialog_single_button_height">46dp</dimen>
+    <dimen name="common_dialog_single_button_margin_horizon">18dp</dimen>
+    <dimen name="common_dialog_single_button_margin_bottom">22dp</dimen>
+    <dimen name="common_dialog_permission_select_margin_top">22dp</dimen>
+    <dimen name="common_dialog_permission_content_padding_bottom">14dp</dimen>
+    <dimen name="common_dialog_permission_item_margin_top">17dp</dimen>
+    <dimen name="common_dialog_permission_item_image_length">16dp</dimen>
+    <dimen name="common_dialog_permission_item_image_margin">6dp</dimen>
+    <dimen name="common_dialog_permission_request_image_length">24dp</dimen>
+    <dimen name="common_dialog_permission_request_image_margin_top">10dp</dimen>
+    <dimen name="common_dialog_permission_request_btn_margin_top">17dp</dimen>
+    <dimen name="common_dialog_permission_request_padding">23dp</dimen>
+    <dimen name="common_dialog_with_scroll_content_height">400dp</dimen>
+    <dimen name="common_dialog_with_scroll_title_margin_bottom">14dp</dimen>
+    <dimen name="common_dialog_with_scroll_height">235dp</dimen>
+    <dimen name="common_dialog_progress_with_text_image_length">36dp</dimen>
+    <dimen name="common_dialog_progress_with_text_margin_top">24dp</dimen>
+    <dimen name="common_dialog_progress_with_text_margin_vertical">8dp</dimen>
+    <dimen name="common_dialog_progress_with_text_margin_horizon">13dp</dimen>
+    <dimen name="picture_select_dialog_margin_vertical">13dp</dimen>
+    <dimen name="picture_select_dialog_margin_horizon">18dp</dimen>
+    <dimen name="dialog_base_action_sheet_confirm_above_height">46dp</dimen>
+    <dimen name="dialog_base_action_sheet_confirm_below_margin_vertical">11dp</dimen>
+
+    <!-- Video Chat -->
+    <dimen name="video_chat_avatar_border">0.5dp</dimen>
+    <dimen name="video_chat_avatar_diameter">175dp</dimen>
+    <dimen name="video_chat_avatar_margin_top">72dp</dimen>
+    <dimen name="video_chat_name_below_avatar">16dp</dimen>
+    <dimen name="video_chat_status_below_name">24dp</dimen>
+    <dimen name="video_chat_name_textsize">22sp</dimen>
+    <dimen name="video_chat_status_textsize">17sp</dimen>
+    <dimen name="video_chat_btn_diameter">70dp</dimen>
+    <dimen name="video_chat_btn_margin_bottom">69dp</dimen>
+    <dimen name="video_chat_btn_margin_left">70dp</dimen>
+    <dimen name="video_chat_btn_margin_right">70dp</dimen>
+    <dimen name="video_chat_mini_video_width">90dp</dimen>
+    <dimen name="video_chat_mini_video_height">159.2dp</dimen>
+    <dimen name="video_chat_mini_video_margin_left">4dp</dimen>
+    <dimen name="video_chat_mini_video_margin_right">64dp</dimen>
+    <dimen name="video_chat_mini_video_margin_bottom">4dp</dimen>
+    <dimen name="video_chat_receive_stub_margin">8dp</dimen>
+    <dimen name="video_chat_receive_name_margin_top">18dp</dimen>
+    <dimen name="video_chat_receive_name_margin_horizon">38dp</dimen>
+    <dimen name="video_chat_receive_name_drawable_padding">11dp</dimen>
+    <dimen name="video_chat_receive_operation_margin_top">19dp</dimen>
+    <dimen name="video_chat_receive_operation_margin_bottom">16dp</dimen>
+    <dimen name="video_chat_receive_operation_icon_height">27dp</dimen>
+
+    <!-- Main Activity -->
+    <dimen name="main_navigation_margin_top">12dp</dimen>
+    <dimen name="main_navigation_margin_right">16dp</dimen>
+    <dimen name="main_navigation_margin_left">16dp</dimen>
+
+    <!-- Me -->
+    <dimen name="me_avatar_width">172dp</dimen>
+    <dimen name="me_avatar_height">172dp</dimen>
+    <dimen name="me_name_fontsize">22sp</dimen>
+    <dimen name="me_name_margin_top">16dp</dimen>
+    <dimen name="me_name_margin_bottom">4dp</dimen>
+    <dimen name="me_age_fontsize">18sp</dimen>
+    <dimen name="me_age_margin_left">4dp</dimen>
+    <dimen name="me_country_textsize">16sp</dimen>
+    <dimen name="me_country_margin_left">8dp</dimen>
+    <dimen name="me_description_margin_top">10dp</dimen>
+    <dimen name="me_list_margin_top">46dp</dimen>
+    <dimen name="me_list_margin_bottom">46dp</dimen>
+    <dimen name="me_list_margin_left">38dp</dimen>
+    <dimen name="me_list_margin_right">38dp</dimen>
+    <dimen name="me_list_icon_margin_right">14dp</dimen>
+    <dimen name="me_list_textsize">17sp</dimen>
+    <dimen name="me_list_item_margin_bottom">22dp</dimen>
+    <dimen name="me_review_us_star_margin">10dp</dimen>
+    <dimen name="me_title_image_size">29dp</dimen>
+    <dimen name="me_title_image_margin_top">25dp</dimen>
+    <dimen name="me_title_image_margin_right">15dp</dimen>
+
+    <!-- Discover -->
+    <dimen name="discover_match_btn_margin_bottom">68dp</dimen>
+    <dimen name="discover_match_gender_filter_gap">5dp</dimen>
+    <dimen name="discover_match_gender_filter_fontsize">19sp</dimen>
+    <dimen name="discover_match_filter_toolbar_height">43dp</dimen>
+    <dimen name="discover_match_filter_toolbar_margin_top">18dp</dimen>
+    <dimen name="discover_navigation_button_width">43dp</dimen>
+    <dimen name="discover_navigation_unread_count_margin_top">-4dp</dimen>
+    <dimen name="discover_navigation_unread_count_margin_right">-4dp</dimen>
+    <dimen name="discover_mini_chat_margin_left">4dp</dimen>
+    <dimen name="discover_tools_margin_right">15dp</dimen>
+    <dimen name="discover_tools_margin_bottom">20dp</dimen>
+    <dimen name="discover_tool_msg_margin_bottom">14dp</dimen>
+    <dimen name="discover_tool_smile_text_max_width">258dp</dimen>
+    <dimen name="discover_tool_smile_text_padding_bottom">15dp</dimen>
+    <dimen name="discover_tool_smile_text_margin_bottom">4dp</dimen>
+    <dimen name="discover_loading_item_width">60dp</dimen>
+    <dimen name="discover_loading_item_height">60dp</dimen>
+    <dimen name="discover_loading_item_margin_left">76dp</dimen>
+    <dimen name="discover_loading_item_margin_right">76dp</dimen>
+    <dimen name="discover_loading_tips_textsize">18sp</dimen>
+    <dimen name="discover_loading_tips_margin_top">10dp</dimen>
+    <dimen name="discover_loading_tips_margin_left">38dp</dimen>
+    <dimen name="discover_loading_tips_margin_right">38dp</dimen>
+    <dimen name="discover_match_fragment_padding">38dp</dimen>
+    <dimen name="discover_match_status_textsize">18sp</dimen>
+    <dimen name="discover_match_status_margin_top">10dp</dimen>
+    <dimen name="discover_match_skip_textsize">14sp</dimen>
+    <dimen name="discover_match_skip_margin_bottom">25dp</dimen>
+    <dimen name="discover_match_blur_btn_margin_top">14dp</dimen>
+    <dimen name="discover_match_blur_padding">38dp</dimen>
+    <dimen name="discover_match_accept_margin_bottom">27dp</dimen>
+    <dimen name="discover_match_rate_margin">8dp</dimen>
+    <dimen name="discover_match_rate_padding">12dp</dimen>
+    <dimen name="discover_match_rate_textsize">14sp</dimen>
+    <dimen name="discover_match_rate_btns_margin_top">16dp</dimen>
+    <dimen name="discover_match_user_margin_left">4dp</dimen>
+    <dimen name="discover_match_user_margin_top">75dp</dimen>
+    <dimen name="discover_match_user_avatar_width">52dp</dimen>
+    <dimen name="discover_match_user_avatar_height">52dp</dimen>
+    <dimen name="discover_match_chat_msg_fontsize">16sp</dimen>
+    <dimen name="discover_match_chat_msg_padding">10dp</dimen>
+    <dimen name="discover_match_chat_msg_padding_left">14dp</dimen>
+    <dimen name="discover_match_user_description_margin_left">4dp</dimen>
+    <dimen name="discover_match_user_description_padding">@dimen/discover_match_chat_msg_padding
+    </dimen>
+    <dimen name="discover_match_user_description_padding_left">
+        @dimen/discover_match_chat_msg_padding_left
+    </dimen>
+    <dimen name="discover_match_user_description_fontsize">@dimen/discover_match_chat_msg_fontsize
+    </dimen>
+    <dimen name="discover_match_user_description_gender_margin_right">6dp</dimen>
+    <dimen name="discover_match_user_description_country_margin_top">6dp</dimen>
+    <dimen name="discover_match_user_description_country_margin_left">4dp</dimen>
+    <dimen name="discover_match_user_add_friend_margin_top">8dp</dimen>
+    <dimen name="discover_match_user_add_friend_margin_left">7dp</dimen>
+    <dimen name="discover_match_user_add_friend_text_padding">10dp</dimen>
+    <dimen name="discover_match_user_add_friend_text_padding_top">15dp</dimen>
+    <dimen name="discover_match_user_add_friend_text_margin_top">4dp</dimen>
+    <dimen name="discover_match_filter_dialog_margin_left">@dimen/common_dialog_body_padding_left
+    </dimen>
+    <dimen name="discover_match_filter_dialog_body_height">318dp</dimen>
+    <dimen name="discover_match_filter_dialog_margin_right">
+        @dimen/common_dialog_body_padding_right
+    </dimen>
+    <dimen name="discover_match_filter_dialog_margin_top">21dp</dimen>
+    <dimen name="discover_match_filter_dialog_fontsize">17sp</dimen>
+    <dimen name="discover_match_filter_dialog_padding_left">18dp</dimen>
+    <dimen name="discover_match_filter_dialog_padding_right">18dp</dimen>
+    <dimen name="discover_match_filter_dialog_padding_top">18dp</dimen>
+    <dimen name="discover_match_filter_dialog_padding_bottom">8dp</dimen>
+    <dimen name="discover_match_filter_dialog_gem_icon_padding">2dp</dimen>
+    <dimen name="discover_match_filter_dialog_gem_margin_right">4dp</dimen>
+    <dimen name="discover_match_filter_dialog_buy_gem_margin_left">6dp</dimen>
+    <dimen name="discover_match_filter_dialog_gem_line_margin_bottom">17dp</dimen>
+    <dimen name="discover_match_filter_dialog_section_textsize">16sp</dimen>
+    <dimen name="discover_match_filter_dialog_section_padding_top">11.3dp</dimen>
+    <dimen name="discover_match_filter_dialog_section_padding_bottom">10dp</dimen>
+    <dimen name="discover_match_filter_dialog_section_padding_horizon">10dp</dimen>
+    <dimen name="discover_match_filter_dialog_section_margin_vertical">12dp</dimen>
+    <dimen name="discover_match_filter_dialog_section_text_padding_top">8.7dp</dimen>
+    <dimen name="discover_match_filter_dialog_language_padding_top">21dp</dimen>
+    <dimen name="discover_match_filter_dialog_language_padding_bottom">21dp</dimen>
+    <dimen name="discover_match_filter_dialog_accept_padding_top">15dp</dimen>
+    <dimen name="discover_match_filter_dialog_accept_padding_bottom">15dp</dimen>
+    <dimen name="discover_match_filter_dialog_accept_textsize">18sp</dimen>
+    <dimen name="discover_match_filter_dialog_accept_margin_left">104dp</dimen>
+    <dimen name="discover_match_filter_dialog_accept_margin_right">104dp</dimen>
+    <dimen name="discover_match_filter_dialog_accept_margin_top">22dp</dimen>
+    <dimen name="discover_match_filter_dialog_accept_height">46dp</dimen>
+    <dimen name="discover_match_filter_dialog_accept_width">153dp</dimen>
+    <dimen name="discover_match_filter_dialog_language_chooose_title_fontsize">18sp</dimen>
+    <dimen name="discover_match_filter_dialog_language_chooose_description_fontsize">14sp</dimen>
+    <dimen name="discover_match_filter_dialog_language_chooose_description_padding_top">15dp</dimen>
+    <dimen name="discover_match_filter_dialog_language_chooose_description_padding_bottom">15dp
+    </dimen>
+    <dimen name="discover_match_filter_dialog_language_chooose_item_fontsize">17sp</dimen>
+    <dimen name="discover_match_filter_dialog_language_chooose_item_padding_top">15dp</dimen>
+    <dimen name="discover_match_filter_dialog_language_chooose_item_padding_bottom">15dp</dimen>
+    <dimen name="discover_match_filter_dialog_language_chooose_item_height">50dp</dimen>
+    <dimen name="discover_match_swipe_to_up_margin_bottom">22dp</dimen>
+    <dimen name="discover_match_swipe_to_up_drawable_padding">8dp</dimen>
+    <dimen name="discover_match_swipe_to_up_drawable_width">20dp</dimen>
+    <dimen name="discover_match_swipe_to_up_drawable_height">18dp</dimen>
+    <dimen name="discover_permission_frag_camera_enabled_margin_top">320dp</dimen>
+    <dimen name="discover_permission_frag_microphone_request_margin_top">363dp</dimen>
+    <dimen name="discover_permission_frag_microphone_enabled_margin_top">372dp</dimen>
+    <dimen name="discover_permission_frag_drawable_padding_text">4dp</dimen>
+    <dimen name="discover_permission_dialog_show_request_setting_with">236dp</dimen>
+    <dimen name="discover_permission_dialog_show_request_setting_height">42dp</dimen>
+    <dimen name="discover_permission_dialog_show_request_setting_margin_top">22dp</dimen>
+    <dimen name="discover_permission_dialog_show_request_cancel_margin">12dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_one_line_width">3dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_one_line_height">249dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_one_line_margin_left">87dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_one_cancel_length">30dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_one_cancel_margin_bottom">42dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_one_background_width">267dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_one_background_height">345dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_one_image_padding_bottom">236dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_one_text_content_width">267dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_one_text_des_margin_top">169dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_one_invite_button_width">231dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_one_invite_button_height">46dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_one_invite_button_margin_top">22dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_two_background_height">428dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_two_content_width">269dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_two_content_height">368dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_two_cancel_margin">14dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_two_image_margin_top">200dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_two_text_margin_top">64dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_two_text_des_width">269dp</dimen>
+    <dimen name="discover_invite_friend_dialog_stage_two_invite_margin_top">22dp</dimen>
+    <dimen name="discover_app_notification_dialog_margin_top">127dp</dimen>
+    <dimen name="discover_app_notification_dialog_width">268dp</dimen>
+    <dimen name="discover_app_notification_dialog_height">344dp</dimen>
+    <dimen name="discover_app_notification_dialog_image_width">256dp</dimen>
+    <dimen name="discover_app_notification_dialog_image_height">332dp</dimen>
+    <dimen name="discover_app_notification_dialog_image_radius">10dp</dimen>
+    <dimen name="discover_app_notification_dialog_cancel_margin_top">22dp</dimen>
+    <dimen name="discover_banned_des_margin_horizon">16dp</dimen>
+    <dimen name="discover_banned_des_margin_top">64dp</dimen>
+    <dimen name="discover_banned_des_margin_vertical">16dp</dimen>
+    <dimen name="discover_banned_unlock_btn_width">181dp</dimen>
+    <dimen name="discover_banned_unlock_btn_height">32dp</dimen>
+    <dimen name="discover_banned_unlock_btn_margin_bottom">25dp</dimen>
+    <dimen name="discover_banned_unlock_count_margin_left">4dp</dimen>
+    <dimen name="discover_banned_unlock_btn_margin_right">8dp</dimen>
+    <dimen name="discover_match_tag_dialog_padding_horizontal">15dp</dimen>
+    <dimen name="discover_match_tag_dialog_padding_vertical">20dp</dimen>
+    <dimen name="discover_match_tag_dialog_gap_between_icon_and_list">16dp</dimen>
+    <dimen name="discover_match_tag_icon_height">28dp</dimen>
+    <dimen name="discover_match_tag_icon_width">28dp</dimen>
+    <dimen name="discover_view_above_new_match_user">66dp</dimen>// heigth of match user view
+
+    <dimen name="discover_trans_viewWidth">52dp</dimen>
+    <dimen name="invite_friend_margin_top">62dp</dimen>
+
+    <!-- Login -->
+    <dimen name="login_btn_margin_left">22dp</dimen>
+    <dimen name="login_btn_margin_right">22dp</dimen>
+    <dimen name="login_btn_height">44dp</dimen>
+    <dimen name="login_btn_radius">16dp</dimen>
+    <dimen name="login_btn_textsize">16sp</dimen>
+    <dimen name="login_text_between_icon_padding">4dp</dimen>
+    <dimen name="login_privacy_bottom_padding">16dp</dimen>
+    <dimen name="login_announcement_textsize">12sp</dimen>
+    <dimen name="login_accountkit_btn_bottom_padding">21dp</dimen>
+    <dimen name="login_facebook_btn_bottom_padding">14dp</dimen>
+    <dimen name="login_viewpager_title_textsize">28sp</dimen>
+    <dimen name="login_viewpager_title_margin_bottom">32dp</dimen>
+    <dimen name="login_viewpager_title_margin_horizon">16dp</dimen>
+    <dimen name="login_viewpager_title_margin_top">48dp</dimen>
+    <dimen name="login_viewpager_margin_top">40dp</dimen>
+    <dimen name="login_viewpager_margin_bottom">32dp</dimen>
+    <dimen name="login_viewpager_indicator_top">17dp</dimen>
+    <dimen name="login_viewpager_indicator_margin_top">21dp</dimen>
+    <dimen name="login_viewpager_indicator_width">8dp</dimen>
+    <dimen name="login_viewpager_indicator_height">8dp</dimen>
+    <dimen name="login_viewpager_indicator_gap">10dp</dimen>
+
+    <!-- Register -->
+    <dimen name="register_seperate_line">1dp</dimen>
+    <dimen name="register_button_confirm_corner">14dp</dimen>
+    <dimen name="register_circleimage_radius">90dp</dimen>
+    <dimen name="register_circleimage_margin_top">22dp</dimen>
+    <dimen name="register_circleimage_margin_bottom">10dp</dimen>
+    <dimen name="register_button_cancel_length">27dp</dimen>
+    <dimen name="register_button_cancel_margin_right">22dp</dimen>
+    <dimen name="register_seperate_line_margin_horizon">22dp</dimen>
+    <dimen name="register_seperate_line_margin_top">13dp</dimen>
+    <dimen name="register_seperate_line_margin_bottom">13dp</dimen>
+    <dimen name="register_radiogroup_height">54dp</dimen>
+    <dimen name="register_radiogroup_margin_horizon">50dp</dimen>
+    <dimen name="register_radiobutton_margin">82dp</dimen>
+    <dimen name="register_button_confirm_height">46dp</dimen>
+    <dimen name="register_button_confirm_margin_top">27dp</dimen>
+    <dimen name="register_button_confirm_margin_horizon">20dp</dimen>
+    <dimen name="register_radio_text_drawable_padding">4dp</dimen>
+    <dimen name="register_radio_text_padding_left">8dp</dimen>
+    <dimen name="register_permission_cancel_img_length">30dp</dimen>
+    <dimen name="register_permission_cancel_img_margin_top">32dp</dimen>
+    <dimen name="register_permission_cancel_img_margin_left">16dp</dimen>
+    <dimen name="register_permission_title_margin_top">160dp</dimen>
+    <dimen name="register_permission_des_margin_top">242dp</dimen>
+    <dimen name="register_permission_des_margin_horizon">30dp</dimen>
+    <dimen name="register_permission_btn_margin_top">311dp</dimen>
+    <dimen name="register_permission_btn_width">260dp</dimen>
+    <dimen name="register_permission_btn_height">38dp</dimen>
+    <dimen name="register_pick_view_text_padding">10dp</dimen>
+
+
+    <!-- Setting -->
+    <dimen name="setting_views_margin_left">16dp</dimen>
+    <dimen name="setting_item_title_height">16dp</dimen>
+    <dimen name="setting_seperate_line_with_item">16dp</dimen>
+    <dimen name="setting_item_content_with_title">12dp</dimen>
+    <dimen name="setting_item_title_with_line">6dp</dimen>
+    <dimen name="setting_item_with_item">19dp</dimen>
+    <dimen name="setting_button_next_length">26dp</dimen>
+    <dimen name="setting_button_margin_horizon">20dp</dimen>
+    <dimen name="setting_button_margin_bottom">28dp</dimen>
+    <dimen name="setting_switch_thumb_radius">27dp</dimen>
+    <dimen name="setting_switch_height">30dp</dimen>
+    <dimen name="setting_switch_width">49dp</dimen>
+    <dimen name="setting_switch_bg_corner">15.5dp</dimen>
+
+    <!-- Title Bar -->
+    <dimen name="title_bar_height">29dp</dimen>
+    <dimen name="title_bar_margin_top_status_bar">6.8dp</dimen>
+    <dimen name="title_bar_margin_bottom_seperate_line">5dp</dimen>
+    <dimen name="title_bar_margin_left">15dp</dimen>
+    <dimen name="title_bar_margin_right">16dp</dimen>
+    <dimen name="title_bar_content_text_size">21sp</dimen>
+    <dimen name="title_bar_icon_left_length">28dp</dimen>
+
+    <!-- EditProfile -->
+    <dimen name="edit_profile_text_margin_vertical">22dp</dimen>
+    <dimen name="edit_profile_icon_margin_vertical">16dp</dimen>
+    <dimen name="edit_profile_icon_size">34dp</dimen>
+
+
+    <!-- OthersProfile -->
+    <dimen name="others_profile_margin_horizon">22dp</dimen>
+    <dimen name="others_profile_title_icon_margin_top">26dp</dimen>
+    <dimen name="others_profile_user_margin_top">14dp</dimen>
+    <dimen name="others_profile_user_info_margin_top">11dp</dimen>
+    <dimen name="others_profile_user_gender_width">12dp</dimen>
+    <dimen name="others_profile_user_gender_height">18dp</dimen>
+    <dimen name="others_profile_user_age_margin_left">2dp</dimen>
+    <dimen name="others_profile_user_country_margin_left">10dp</dimen>
+    <dimen name="others_profile_user_snapchat_margin_top">14dp</dimen>
+    <dimen name="others_profile_user_instagram_margin_top">14dp</dimen>
+    <dimen name="others_profile_social_name_margin_left">6dp</dimen>
+    <dimen name="others_profile_social_app_size">28dp</dimen>
+    <dimen name="others_profile_message_drager_frameLayout">270dp</dimen>
+    <dimen name="others_profile_message_button_height">46dp</dimen>
+    <dimen name="others_profile_message_button_margin_horizon">0dp</dimen>
+    <dimen name="others_profile_message_button_margin_bottom">28dp</dimen>
+    <dimen name="others_profile_message_button_margin_top">30dp</dimen>
+    <dimen name="others_profile_report_user_dialog_width">232dp</dimen>
+    <dimen name="others_profile_report_user_dialog_height">46dp</dimen>
+    <dimen name="others_profile_report_user_dialog_margin_horizon">16dp</dimen>
+    <dimen name="others_profile_report_user_dialog_margin_top">14dp</dimen>
+    <dimen name="others_profile_report_user_dialog_margin_bottom">24dp</dimen>
+    <dimen name="others_profile_report_user_dialog_text_margin_top">4dp</dimen>
+    <dimen name="others_profile_report_user_dialog_text_margin_bottom">34dp</dimen>
+
+    <dimen name="others_profile_dialog_remove_height">130dp</dimen>
+    <dimen name="others_profile_dialog_report_height">211dp</dimen>
+
+    <!-- InviteFriend -->
+    <dimen name="invite_friend_views_margin_left">16dp</dimen>
+    <dimen name="invite_friend_item_layout_height">64dp</dimen>
+    <dimen name="invite_friend_item_icon_size">42dp</dimen>
+    <dimen name="invite_friend_item_info_margin_icon">8dp</dimen>
+    <dimen name="invite_friend_item_margin_title">1dp</dimen>
+    <dimen name="invite_friend_list_margin_item">8dp</dimen>
+    <dimen name="invite_friend_connect_facebook_cancel_length">30dp</dimen>
+    <dimen name="invite_friend_connect_facebook_cancel_margin_left">16dp</dimen>
+    <dimen name="invite_friend_connect_facebook_cancel_margin_top">13dp</dimen>
+    <dimen name="invite_friend_connect_facebook_group_margin_top">87dp</dimen>
+    <dimen name="invite_friend_connect_facebook_group_width">280dp</dimen>
+    <dimen name="invite_friend_connect_facebook_group_height">237dp</dimen>
+    <dimen name="invite_friend_connect_facebook_des_margin_top">301dp</dimen>
+    <dimen name="invite_friend_connect_facebook_des_margin_horizon">30dp</dimen>
+    <dimen name="invite_friend_connect_facebook_skip_margin_bottom">25dp</dimen>
+    <dimen name="invite_friend_connect_facebook_button_margin_bottom">68dp</dimen>
+    <dimen name="invite_friend_connect_facebook_button_width">320dp</dimen>
+    <dimen name="invite_friend_connect_facebook_button_height">46dp</dimen>
+
+
+    <!-- Chat -->
+    <dimen name="chat_views_magrin_left">16dp</dimen>
+    <dimen name="chat_item_title_magrin_left">14dp</dimen>
+    <dimen name="chat_item_title_magrin_top">8dp</dimen>
+    <dimen name="chat_item_messages_magrin_recent">22dp</dimen>
+    <dimen name="chat_invite_friends_magrin_top">6dp</dimen>
+    <dimen name="chat_invite_info_magrin_top">9dp</dimen>
+    <dimen name="chat_btn_invite_reward_width">108dp</dimen>
+    <dimen name="chat_btn_invite_reward_height">32dp</dimen>
+    <dimen name="chat_btn_invite_reward_magrin_top">10dp</dimen>
+    <dimen name="chat_btn_invite_reward_magrin_bottom">28dp</dimen>
+    <dimen name="chat_btn_invite_friend_magrin_horizon">16dp</dimen>
+    <dimen name="chat_btn_icon_length">20dp</dimen>
+    <dimen name="chat_btn_text_margin_icon">4dp</dimen>
+    <dimen name="chat_match_item_avatar_length">76dp</dimen>
+    <dimen name="chat_match_item_avatar_radius">14dp</dimen>
+    <dimen name="chat_match_item_name_margin_top">4dp</dimen>
+    <dimen name="chat_match_item_is_friend_margin">4dp</dimen>
+    <dimen name="chat_match_item_is_friend_width">22dp</dimen>
+    <dimen name="chat_match_item_is_friend_height">20dp</dimen>
+    <dimen name="chat_match_item_seperate_width">6dp</dimen>
+    <dimen name="chat_match_item_twop_text_width">22dp</dimen>
+    <dimen name="chat_match_item_twop_text_height">20dp</dimen>
+    <dimen name="chat_match_item_twop_text_margin_top">4dp</dimen>
+    <dimen name="chat_invite_unread_count_margin_right">10dp</dimen>
+    <dimen name="chat_invite_bar_des_margin_horizon">16dp</dimen>
+    <dimen name="chat_invite_bar_des_margin_top">10dp</dimen>
+    <dimen name="chat_invite_bar_des_margin_bottom">8dp</dimen>
+    <dimen name="chat_invite_bar_btn_margin_bottom">12dp</dimen>
+    <dimen name="chat_invite_bar_btn_min_width">108dp</dimen>
+    <dimen name="chat_invite_bar_btn_padding_horizon">13dp</dimen>
+    <dimen name="chat_invite_bar_line_margin">207dp</dimen>
+    <dimen name="chat_invite_bar_arrow_margin_bottom">-12.25dp</dimen>
+    <dimen name="chat_invite_bar_claim_reward_width">68dp</dimen>
+    <dimen name="chat_invite_bar_claim_reward_height">30dp</dimen>
+    <dimen name="chat_invite_bar_claim_reward_margin_left">22dp</dimen>
+    <dimen name="chat_verify_dialog_content_height">394dp</dimen>
+    <dimen name="chat_verify_dialog_img_width">290dp</dimen>
+    <dimen name="chat_verify_dialog_img_height">202dp</dimen>
+    <dimen name="chat_verify_dialog_img_margin_top">-36dp</dimen>
+    <dimen name="chat_verify_dialog_text_margin_horizon">18dp</dimen>
+    <dimen name="chat_verify_dialog_verify_btn_margin_top">18dp</dimen>
+    <dimen name="chat_verify_dialog_skip_margin_top">10dp</dimen>
+    <dimen name="chat_verify_dialog_des_margin_top">12dp</dimen>
+    <dimen name="stub_chat_invite_bar_avatar_length">42dp</dimen>
+    <dimen name="stub_chat_invite_bar_skip_margin_left">8dp</dimen>
+    <dimen name="stub_chat_invite_bar_skip_margin_right">12dp</dimen>
+    <dimen name="chat_invite_bar_load_view_height">88dp</dimen>
+    <dimen name="chat_invite_bar_load_length">20dp</dimen>
+    <dimen name="chat_invite_bar_load_margin_top">6dp</dimen>
+    <dimen name="chat_invite_bar_load_inner_radius">6dp</dimen>
+    <dimen name="chat_invite_bar_load_progress_width">2dp</dimen>
+    <dimen name="chat_invite_flow_suggest_title_margin_top">4dp</dimen>
+    <dimen name="chat_invite_flow_remain_title_margin_top">10dp</dimen>
+    <dimen name="chat_item_suggest_contact_avatar_length">52dp</dimen>
+    <dimen name="chat_item_suggest_contact_avatar_margin_vertical">13dp</dimen>
+    <dimen name="chat_item_facebook_text_margin_left">8dp</dimen>
+
+
+    <!-- Store -->
+    <dimen name="store_illust_width">117dp</dimen>
+    <dimen name="store_illust_height">82dp</dimen>
+    <dimen name="store_illust_margin_top">22dp</dimen>
+    <dimen name="store_gem_item_margin_top">12dp</dimen>
+    <dimen name="store_icon_gem_length">20dp</dimen>
+    <dimen name="store_icon_margin_num">4dp</dimen>
+    <dimen name="store_gem_info_margin_top">4dp</dimen>
+    <dimen name="store_gem_info_margin_bottom">18dp</dimen>
+    <dimen name="store_recycel_margin_horizon">12dp</dimen>
+    <dimen name="store_recycel_margin_bottom">24dp</dimen>
+
+    <!-- Store Item -->
+    <dimen name="store_item_width">160dp</dimen>
+    <dimen name="store_item_height">183dp</dimen>
+    <dimen name="store_item_margin_left">4dp</dimen>
+    <dimen name="store_item_margin_right">4dp</dimen>
+    <dimen name="store_item_margin_bottom">8dp</dimen>
+    <dimen name="store_item_sale_info_width">120dp</dimen>
+    <dimen name="store_item_sale_info_height">24dp</dimen>
+    <dimen name="store_item_sale_info_margin_top">12dp</dimen>
+    <dimen name="store_item_sale_info_margin_horizon">20dp</dimen>
+    <dimen name="store_item_product_img_width">80dp</dimen>
+    <dimen name="store_item_product_img_height">76dp</dimen>
+    <dimen name="store_item_product_price_height">30dp</dimen>
+    <dimen name="store_item_product_price_width">128dp</dimen>
+    <dimen name="store_item_product_price_margin_top">13dp</dimen>
+    <dimen name="store_item_product_price_margin_horizon">16dp</dimen>
+    <dimen name="store_item_product_hot_size">44dp</dimen>
+
+    <!-- Redeem -->
+    <dimen name="redeem_illust_width">220dp</dimen>
+    <dimen name="redeem_illust_height">81.3dp</dimen>
+    <dimen name="redeem_illust_margin_top">18dp</dimen>
+    <dimen name="redeem_gem_info_margin_top">11dp</dimen>
+    <dimen name="redeem_smile_gem_margin_top">2dp</dimen>
+    <dimen name="redeem_smile_margin_left">32dp</dimen>
+    <dimen name="redeem_text_margin_left">10dp</dimen>
+    <dimen name="redeem_recycle_margin_top">23dp</dimen>
+    <dimen name="redeem_invite_margin_bottom">28dp</dimen>
+    <dimen name="redeem_invite_padding_horizon">10dp</dimen>
+    <dimen name="redeem_invite_padding_vertical">5dp</dimen>
+
+
+    <!-- ChatMessage -->
+    <dimen name="chat_msg_mute_icon_length">18dp</dimen>
+    <dimen name="chat_msg_mute_icon_marging_left">6dp</dimen>
+    <dimen name="chat_msg_request_marging_bottom">14dp</dimen>
+    <dimen name="chat_msg_accept_marging_top">8dp</dimen>
+    <dimen name="chat_msg_bottom_layout_height">50dp</dimen>
+    <dimen name="chat_msg_bottom_layout_margin_horizon">14dp</dimen>
+    <dimen name="chat_msg_bottom_icon_length">30dp</dimen>
+    <dimen name="chat_msg_bottom_icon_margin_left">8dp</dimen>
+    <dimen name="chat_msg_video_icon_width">22dp</dimen>
+    <dimen name="chat_msg_video_icon_height">15dp</dimen>
+    <dimen name="chat_msg_video_cancel_icon_length">24dp</dimen>
+    <dimen name="chat_msg_video_chat_text_margin_left">6dp</dimen>
+    <dimen name="chat_msg_friend_info_text_margin_horizon">14dp</dimen>
+
+
+    <!-- About -->
+    <dimen name="about_icon_length">80dp</dimen>
+    <dimen name="about_icon_margin_top">68dp</dimen>
+    <dimen name="about_app_name_margin_top">12dp</dimen>
+    <dimen name="about_app_version_margin_top">4dp</dimen>
+    <dimen name="about_privacy_policy_margin_top">58dp</dimen>
+
+
+    <!-- Friend List Item -->
+    <dimen name="friend_list_item_icon">42dp</dimen>
+    <dimen name="friend_list_item_icon_margin_vertical">12dp</dimen>
+    <dimen name="friend_list_item_icon_margin_horizon">16dp</dimen>
+    <dimen name="friend_list_item_icon_margin_top">4dp</dimen>
+    <dimen name="friend_list_item_name_margin_left">8dp</dimen>
+    <dimen name="friend_list_item_name_margin_top">4dp</dimen>
+
+    <!-- Conversation Item -->
+    <dimen name="conversation_list_item_heigth">80dp</dimen>
+    <dimen name="conversation_list_item_swipe_width">60dp</dimen>
+    <dimen name="conversation_list_item_avatar_width">52dp</dimen>
+
+
+    <!-- Free Gem Item -->
+    <dimen name="free_gem_item_margin_bottom">8dp</dimen>
+    <dimen name="free_gem_item_icon_margin_left">14dp</dimen>
+    <dimen name="free_gem_item_icon_size">34dp</dimen>
+    <dimen name="free_gem_item_icon_bowknot_height">28dp</dimen>
+    <dimen name="free_gem_item_icon_bowknot_margin_left">16dp</dimen>
+    <dimen name="free_gem_item_gem_count_margin_left">8dp</dimen>
+    <dimen name="free_gem_item_smile_count_height">36dp</dimen>
+    <dimen name="free_gem_item_smile_count_width">86dp</dimen>
+    <dimen name="free_gem_item_smile_count_margin">13dp</dimen>
+    <dimen name="free_gem_item_smile_count_padding_horizon">10dp</dimen>
+
+    <!-- Invite By Text -->
+    <dimen name="invite_sms_search_height">40dp</dimen>
+    <dimen name="invite_sms_search_icon">18dp</dimen>
+    <dimen name="invite_sms_search_icon_margin_left">26dp</dimen>
+    <dimen name="invite_sms_clear_icon">27dp</dimen>
+    <dimen name="invite_sms_clear_icon_margin_right">16dp</dimen>
+    <dimen name="invite_sms_text_margin_left">6dp</dimen>
+    <dimen name="invite_sms_item_content_margin_left">8dp</dimen>
+    <dimen name="invite_sms_item_content_margin_top">12dp</dimen>
+    <dimen name="invite_sms_item_content_margin_bottom">14dp</dimen>
+    <dimen name="invite_sms_item_text_margin_top">4dp</dimen>
+    <dimen name="invite_sms_premission_layout_padding_bottom">44dp</dimen>
+    <dimen name="invite_sms_premission_image_width">280dp</dimen>
+    <dimen name="invite_sms_premission_image_height">237dp</dimen>
+    <dimen name="invite_sms_premission_contact_info_margin_top">261dp</dimen>
+    <dimen name="invite_sms_premission_contact_des_margin_top">8dp</dimen>
+    <dimen name="invite_sms_premission_contact_des_margin_horizon">40dp</dimen>
+    <dimen name="invite_sms_premission_contact_btn_width">320dp</dimen>
+    <dimen name="invite_sms_premission_contact_btn_height">46dp</dimen>
+    <dimen name="invite_sms_premission_contact_btn_margin_top">28dp</dimen>
+
+    <!-- Invite by username -->
+    <dimen name="invite_username_search_icon_margin_left">16dp</dimen>
+    <dimen name="invite_username_search_not_set_margin_top">106dp</dimen>
+    <dimen name="invite_username_search_set_btn_margin_top">14dp</dimen>
+    <dimen name="invite_username_search_set_btn_width">174dp</dimen>
+    <dimen name="invite_username_search_set_btn_heigth">32dp</dimen>
+    <dimen name="invite_username_search_no_result_margin_top">14dp</dimen>
+
+    <!-- Set Username -->
+    <dimen name="set_username_edit_margin_top">130dp</dimen>
+    <dimen name="set_username_format_info_margin_top">10dp</dimen>
+    <dimen name="set_username_format_info_margin_horizon">30dp</dimen>
+    <dimen name="set_username_save_btn_height">46dp</dimen>
+
+    <!-- Friend Request Item -->
+    <dimen name="friend_request_item_option_margin_left">4dp</dimen>
+    <dimen name="friend_request_item_option_accept_margin_left">8dp</dimen>
+    <dimen name="friend_request_item_option_accept_width">38dp</dimen>
+    <dimen name="friend_request_item_option_accept_height">32dp</dimen>
+
+    <!-- Invite by Contact Item -->
+    <dimen name="invite_by_contact_item_margin_left">16dp</dimen>
+    <dimen name="invite_by_contact_item_name_margin_left">8dp</dimen>
+    <dimen name="invite_by_contact_item_add_width">38dp</dimen>
+    <dimen name="invite_by_contact_item_add_height">32dp</dimen>
+    <dimen name="invite_by_user_item_height">66dp</dimen>
+
+    <!-- Welcome-->
+    <dimen name="welcome_me_margin_horizon">16dp</dimen>
+    <dimen name="welcome_me_margin_vertical">16dp</dimen>
+    <dimen name="welcome_start_margin_bottom">68dp</dimen>
+
+    <!-- Tutorial -->
+    <dimen name="tutorial_start_btn_length">70dp</dimen>
+    <dimen name="tutorial_start_tips_margin_bottom">14dp</dimen>
+    <dimen name="tutorial_chat_btn_margin_bottom">20dp</dimen>
+    <dimen name="tutorial_avatar_margin_left">4dp</dimen>
+    <dimen name="tutorial_avatar_margin_top">75dp</dimen>
+    <dimen name="tutorial_friend_margin_left">8dp</dimen>
+    <dimen name="tutorial_swipe_margin_bottom">24dp</dimen>
+    <dimen name="tutorial_star_img_width">36dp</dimen>
+    <dimen name="tutorial_star_img_height">32dp</dimen>
+    <dimen name="tutorial_star01_margin_left">4dp</dimen>
+    <dimen name="tutorial_star02_margin_top">40dp</dimen>
+
+    <!-- filter -->
+    <dimen name="filter_item_bottom">31dp</dimen>
+    <dimen name="filter_item_spacing">14dp</dimen>
+
+    <!-- Progressbar -->
+    <dimen name="circular_default_border_width">4dp</dimen>
+
+    <dimen name="dp2">2dp</dimen>
+
+
+
+</resources>
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_me_bg"
+    tools:context=".activity.OpenDoorActivity">
+    
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/btn_open_door"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="56dp"
+        android:background="@drawable/shape_blue_10dp"
+        android:gravity="center"
+        android:text="平安西门"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/btn_open_house"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btn_open_door"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="56dp"
+        android:background="@drawable/shape_blue_10dp"
+        android:gravity="center"
+        android:text="平安二号楼一单元"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

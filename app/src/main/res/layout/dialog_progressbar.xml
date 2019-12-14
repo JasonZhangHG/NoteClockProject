@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="114dp"
+                android:layout_height="97dp"
+                android:orientation="vertical"
+                android:theme="@style/Theme.AppCompat.NoActionBar">
+
+    <ProgressBar
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="24dp"/>
+</RelativeLayout>

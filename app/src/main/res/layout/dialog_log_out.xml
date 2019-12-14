@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_log_out_dialog"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black50"
+    android:gravity="center"
+    android:paddingEnd="@dimen/common_dialog_body_padding_right"
+    android:paddingLeft="@dimen/common_dialog_body_padding_left"
+    android:paddingRight="@dimen/common_dialog_body_padding_right"
+    android:paddingStart="@dimen/common_dialog_body_padding_left"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_title_logout_dialog"
+            style="@style/TextStyleRobotoMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="21dp"
+            android:text="@string/sign_out_check_pop_title"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_cancel_logout_dialog"
+            style="@style/TextStyleRobotoMedium"
+            android:layout_width="81dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/tv_title_logout_dialog"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_toLeftOf="@+id/tv_yes_logout_dialog"
+            android:gravity="center"
+            android:text="@string/btn_cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_yes_logout_dialog"
+            style="@style/TextStyleRobotoMedium"
+            android:layout_width="64dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tv_title_logout_dialog"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="@string/sign_out_check_pop_btn_1"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
