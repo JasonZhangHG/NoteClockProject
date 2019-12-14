@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <TextView
+        android:id="@+id/tvAddActivityTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#8DEEEE"
+        android:gravity="center"
+        android:text="日记"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+    
+    <!-- 标题 -->
+    <EditText
+        android:id="@+id/editText_add_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:hint="请输入标题"
+        android:textColor="#0000ff"
+        android:textSize="@dimen/sp_18" />
+    
+    <!-- 闹钟时间 -->
+    <TextView
+        android:id="@+id/editText_add_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_add_title"
+        android:text="时间"
+        android:textColor="#0000ff"
+        android:textSize="@dimen/sp_18" />
+    
+    <!-- 备忘录内容 -->
+    <view
+        android:id="@+id/noteEditText_add_content"
+        class="cool.camerax.noteclockproject.view.NoteEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_below="@+id/editText_add_time"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:hint="请输入内容"
+        android:scrollbars="vertical"
+        android:textColor="#0000ff"
+        android:textSize="@dimen/sp_18" />
+    
+    <!-- 底部按钮 -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true">
+        <!-- 保存按钮 -->
+        <Button
+            android:id="@+id/button_add_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickView"
+            android:text="保  存" />
+        <!-- 取消按钮 -->
+        <Button
+            android:id="@+id/button_add_cacel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/button_add_save"
+            android:onClick="clickView"
+            android:text="取  消" />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        
+        <TextView
+            android:id="@+id/button_small_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_garde"
+            android:onClick="clickView"
+            android:padding="@dimen/dp5"
+            android:text="一般重要"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/button_middle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@+id/button_small_text"
+            android:background="@drawable/select_garde"
+            android:onClick="clickView"
+            android:padding="@dimen/dp5"
+            android:text="中级重要" />
+        
+        <TextView
+            android:id="@+id/button_big_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@+id/button_middle_text"
+            android:background="@drawable/select_garde"
+            android:onClick="clickView"
+            android:padding="@dimen/dp5"
+            android:text="非常重要" />
+    
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -25,4 +25,9 @@ public class MainActivity extends BaseActivity {
     public void onClockClicked() {
         toActivity(ClockActivity.class);
     }
+
+    @OnClick(R.id.btn_note)
+    public void onNoteClicked() {
+        toActivity(NoteActivity.class);
+    }
 }

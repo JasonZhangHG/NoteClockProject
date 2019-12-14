@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_me_bg"
+    android:orientation="vertical">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#8DEEEE"
+        android:gravity="center"
+        android:text="记事本"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/btnKnowledgeActivityAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_btn_register_false"
+            android:text="点击添加日记"
+            android:textColor="#ffff00" />
+    
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_search_view_chats_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@drawable/shape_white_7dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:layout_width="@dimen/dp11"
+            android:layout_height="@dimen/dp11"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp10"
+            android:src="@drawable/icon_search" />
+        
+        <EditText
+            android:id="@+id/edt_search_chats_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp6"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="搜索"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/search_text_color"
+            android:textColorHint="@color/search_text_color"
+            android:textSize="11sp" />
+    
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/lvKnowledgeActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

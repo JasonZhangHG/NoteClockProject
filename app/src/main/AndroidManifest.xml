@@ -30,6 +30,18 @@
             android:name=".activity.ClockActivity"
             android:screenOrientation="portrait" />
         
+        <activity
+            android:name=".activity.AddNoteActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".activity.NoteInfoActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".activity.NoteActivity"
+            android:screenOrientation="portrait" />
+        
         <receiver android:name=".receiver.AlarmClockBroadcast" />
     
     </application>

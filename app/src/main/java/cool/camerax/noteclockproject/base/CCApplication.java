@@ -5,6 +5,7 @@ import android.support.multidex.MultiDexApplication;
 
 import com.blankj.utilcode.util.Utils;
 
+import cool.camerax.noteclockproject.utils.DBNoteUtils;
 import cool.camerax.noteclockproject.utils.ToastHelper;
 
 
@@ -26,5 +27,6 @@ public class CCApplication extends MultiDexApplication {
         INSTANCE = this;
         Utils.init(this);
         ToastHelper.init(this);
+        DBNoteUtils.Init(this);
     }
 }
