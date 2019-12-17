@@ -3,16 +3,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/icon_edit_bg"
     android:orientation="vertical">
     
     <TextView
         android:id="@+id/tvAddActivityTitle"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="#8DEEEE"
         android:gravity="center"
-        android:text="日记"
-        android:textColor="#fff"
+        android:text="详细信息"
+        android:textColor="@color/white"
         android:textSize="20sp" />
     
     <!-- 标题 -->

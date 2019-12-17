@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/icon_me_bg"
+    android:background="@drawable/icon_edit_bg"
     android:orientation="vertical">
     
     <TextView
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="#8DEEEE"
         android:gravity="center"
         android:text="@string/app_name"
         android:textColor="#fff"

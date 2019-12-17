@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">闹钟记事本</string>
+    <string name="app_name">提醒事项</string>
     <string name="back_btn_exit_pop">再按一次返回键退出</string>
     <string name="sign_out_check_pop_title">确定要退出吗?</string>
     <string name="sign_out_check_pop_btn_1">确定</string>
