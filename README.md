@@ -1,0 +1,2 @@
+# NoteClockProject
+安卓仿IOS事件提醒的demo  本地数据库GreenDao添加事件和提醒时间 通过AlarmManager 和BroadcastReceiver 实现闹钟提醒功能  闹钟提醒有震动和响铃 通过EventBus传递事件
